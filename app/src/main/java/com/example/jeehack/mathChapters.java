@@ -16,7 +16,7 @@ public class mathChapters extends AppCompatActivity {
 
     public void video(View view) {
 
-        startActivity(new Intent(mathChapters.this,TrigVideo.class));
+        startActivity(new Intent(mathChapters.this,Video.class));
         
 
     }

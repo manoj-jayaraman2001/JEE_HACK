@@ -11,10 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".viewMathsBook11"></activity>
+        <activity android:name=".Video"></activity>
+        <activity android:name=".viewMathsBook11" />
         <activity android:name=".Maths_class11" />
         <activity android:name=".Ncertbooks" />
-        <activity android:name=".TrigVideo" />
         <activity android:name=".mathChapters" />
         <activity android:name=".Subject" />
         <activity android:name=".profile" />
