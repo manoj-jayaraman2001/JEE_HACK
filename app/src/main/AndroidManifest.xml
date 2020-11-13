@@ -11,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Video"></activity>
+        <activity android:name=".ProgressActivity"></activity>
+        <activity android:name=".mockTest" />
+        <activity android:name=".mockQuiz" />
+        <activity android:name=".mathsQuizzes" />
+        <activity android:name=".ChooseSubject" />
+        <activity android:name=".Video" />
         <activity android:name=".viewMathsBook11" />
         <activity android:name=".Maths_class11" />
         <activity android:name=".Ncertbooks" />

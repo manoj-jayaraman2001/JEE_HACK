@@ -108,6 +108,9 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 Intent j = new Intent(Dashboard.this,Ncertbooks.class);
                 startActivity(j);
                 break;
+            case R.id.nav_progress:
+                startActivity(new Intent(Dashboard.this,ProgressActivity.class));
+                break;
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);
@@ -116,5 +119,9 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
     public void learn(View view) {
         startActivity(new Intent(Dashboard.this,Subject.class));
+    }
+
+    public void subjectSelect(View view) {
+        startActivity(new Intent(Dashboard.this,ChooseSubject.class));
     }
 }

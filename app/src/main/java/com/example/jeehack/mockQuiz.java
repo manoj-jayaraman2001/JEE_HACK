@@ -6,21 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Subject extends AppCompatActivity {
+public class mockQuiz extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subject);
+        setContentView(R.layout.activity_mock_quiz);
     }
 
-    public void chapter(View view) {
-
-        startActivity(new Intent(Subject.this,mathChapters.class));
-
+    public void startTest(View view) {
+        startActivity(new Intent(mockQuiz.this, mockTest.class));
     }
-
-
-
-
 }
