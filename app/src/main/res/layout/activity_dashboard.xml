@@ -34,6 +34,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="46dp"
+                    android:layout_height="47dp"
+                    android:background="#00FFFFFF"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:navigationIcon="@drawable/ic_baseline_menu_open_24" />
+
+
             </FrameLayout>
         </LinearLayout>
 
@@ -277,21 +289,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.033" />
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="46dp"
-            android:layout_height="47dp"
-            android:background="#00FFFFFF"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.031"
-            app:navigationIcon="@drawable/ic_baseline_menu_open_24" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

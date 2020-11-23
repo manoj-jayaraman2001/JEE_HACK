@@ -111,6 +111,8 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             case R.id.nav_progress:
                 startActivity(new Intent(Dashboard.this,ProgressActivity.class));
                 break;
+            case R.id.nav_feedback:
+                startActivity(new Intent(Dashboard.this,Feedback.class));
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);

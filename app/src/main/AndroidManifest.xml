@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AskDoubts"></activity>
+        <activity android:name=".Feedback"></activity>
+        <activity android:name=".AskDoubts" />
         <activity android:name=".ShowPreviousPapers" />
         <activity android:name=".PracticePapers" />
         <activity android:name=".PreviousPapers" />
