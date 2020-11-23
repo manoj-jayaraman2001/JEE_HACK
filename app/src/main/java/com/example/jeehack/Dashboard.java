@@ -62,7 +62,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-               Name.setText(value.getString("UserName"));
+               Name.setText("Hi,"+value.getString("UserName"));
 
             }
         });
@@ -123,5 +123,13 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
     public void subjectSelect(View view) {
         startActivity(new Intent(Dashboard.this,ChooseSubject.class));
+    }
+
+    public void previouspapers(View view) {
+        startActivity(new Intent (Dashboard.this,PreviousPapers.class));
+    }
+
+    public void practicepapers(View view) {
+        startActivity(new Intent (Dashboard.this,PracticePapers.class));
     }
 }

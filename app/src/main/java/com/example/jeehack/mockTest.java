@@ -2,6 +2,7 @@ package com.example.jeehack;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,6 +17,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class mockTest extends AppCompatActivity {
+
+    public static final String EXTRA_SCORE = "extraScore";
 
     private TextView textViewQuestion,textViewScore,textViewQuestionCount,textViewCountDown;
     private RadioGroup rbGroup;
@@ -82,15 +85,15 @@ public class mockTest extends AppCompatActivity {
 
         if(questionCounter<totalQuestionCount){
             currentquestion = questionlist.get(questionCounter);
+                textViewQuestion.setText(currentquestion.getQuestion());
+                rb1.setText(currentquestion.getOption1());
+                rb2.setText(currentquestion.getOption2());
+                rb3.setText(currentquestion.getOption3());
+                questionCounter++;
+                textViewQuestionCount.setText("Question: " + questionCounter + "/" + totalQuestionCount);
+                answered = false;
+                ConfirmNext.setText("Confirm");
 
-            textViewQuestion.setText(currentquestion.getQuestion());
-            rb1.setText(currentquestion.getOption1());
-            rb2.setText(currentquestion.getOption2());
-            rb3.setText(currentquestion.getOption3());
-            questionCounter++;
-            textViewQuestionCount.setText("Question: "+ questionCounter+"/"+totalQuestionCount);
-            answered= false;
-            ConfirmNext.setText("Confirm");
         }else{
             finishQuiz();
         }
@@ -139,6 +142,9 @@ public class mockTest extends AppCompatActivity {
 
 
     private void finishQuiz(){
+        Intent resultIntent = new Intent();
+        resultIntent.putExtra(EXTRA_SCORE,score);
+        setResult(RESULT_OK,resultIntent);
         finish();
     }
 }

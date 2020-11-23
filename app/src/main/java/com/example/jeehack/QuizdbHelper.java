@@ -30,6 +30,7 @@ public class QuizdbHelper extends SQLiteOpenHelper {
 
         final String SQL_CREATE_QUESTIONS_TABLE = "CREATE TABLE "+
                 QuestionsTable.TABLE_NAME+ " ( "+
+
                 QuestionsTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
                 QuestionsTable.COLUMN_QUESTION + " TEXT, "+
                 QuestionsTable.COLUMN_OPTION1 + " TEXT, "+
@@ -60,7 +61,7 @@ public class QuizdbHelper extends SQLiteOpenHelper {
         addQuestion(q3);
         Question q4 = new Question("If A = {2,5,7} and B = {1,2,5,6,7} then B-A =","{1,6}","{1,2}","{}",1);
         addQuestion(q4);
-        Question q5 = new Question("A = {8,9,10} and B = {} then A union B = ","{8,9,10}","{8,9}","{}",2);
+        Question q5 = new Question("A = {8,9,10} and B = {} then A union B = ","{8,9,10}","{8,9}","{}",1);
         addQuestion(q5);
     }
     private void addQuestion(Question question){

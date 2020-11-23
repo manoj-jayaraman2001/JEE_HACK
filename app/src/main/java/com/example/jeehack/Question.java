@@ -6,6 +6,7 @@ public class Question {
     private String option2;
     private String option3;
     private int answernum;
+    private String chapter;
 
     public Question(){
 
@@ -17,6 +18,7 @@ public class Question {
         this.option2 = option2;
         this.option3 = option3;
         this.answernum = answernum;
+
     }
 
     public String getQuestion() {
@@ -58,4 +60,6 @@ public class Question {
     public void setAnswernum(int answernum) {
         this.answernum = answernum;
     }
+
+
 }

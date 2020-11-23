@@ -62,8 +62,7 @@
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542"
-        tools:progress="15" />
+        app:layout_constraintVertical_bias="0.542" />
 
     <ProgressBar
         android:id="@+id/progressBarChemistry"
@@ -77,11 +76,10 @@
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835"
-        tools:progress="25" />
+        app:layout_constraintVertical_bias="0.835" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/textmaths"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0%"
@@ -93,7 +91,7 @@
         app:layout_constraintTop_toTopOf="@+id/progressBarMaths" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/textphysics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0%"
@@ -105,7 +103,7 @@
         app:layout_constraintTop_toTopOf="@+id/progressBarPhysics" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/textchemistry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0%"

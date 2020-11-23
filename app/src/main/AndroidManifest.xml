@@ -11,31 +11,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProgressActivity"></activity>
-        <activity android:name=".mockTest"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".mockQuiz"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".mathsQuizzes"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ChooseSubject"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Video"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".viewMathsBook11"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Maths_class11"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Ncertbooks"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".mathChapters"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Subject"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".profile"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".header"
-            android:screenOrientation="portrait"/>
+        <activity android:name=".AskDoubts"></activity>
+        <activity android:name=".ShowPreviousPapers" />
+        <activity android:name=".PracticePapers" />
+        <activity android:name=".PreviousPapers" />
+        <activity android:name=".ProgressActivity" />
+        <activity
+            android:name=".mockTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mockQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathsQuizzes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseSubject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Video"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewMathsBook11"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Maths_class11"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ncertbooks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Subject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".header"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".changePassword"
             android:screenOrientation="portrait" />
