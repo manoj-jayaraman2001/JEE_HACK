@@ -113,6 +113,9 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 break;
             case R.id.nav_feedback:
                 startActivity(new Intent(Dashboard.this,Feedback.class));
+                break;
+            case R.id.nav_postQuery:
+                startActivity(new Intent(Dashboard.this,AskDoubts.class));
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);

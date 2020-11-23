@@ -16,12 +16,12 @@
             android:icon="@drawable/ic_sharp_menu_book_24"
             android:title="NCERT Books"/>
 
-        <item android:id="@+id/nav_notification"
-            android:icon="@drawable/ic_baseline_bar_chart_24"
-            android:title="Notifications"/>
+        <item android:id="@+id/nav_postQuery"
+            android:icon="@drawable/ic_baseline_question_answer_24"
+            android:title="Post A Query"/>
 
         <item android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_baseline_person_24"
+            android:icon="@drawable/ic_baseline_arrow_back_24"
             android:title="Logout" />
     </group>
 
